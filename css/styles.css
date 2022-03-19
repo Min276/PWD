@@ -1,0 +1,28 @@
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+.main{
+    display: flex;
+    height: 300px;
+}
+.header{
+    background-color: blue;
+    height: 100px;
+}
+.nav{
+    flex-grow: 1;
+    background-color: yellow;
+}
+.content{
+    flex-grow: 3;
+    background-color: brown;
+}
+.sidebar{
+    flex-grow: 1;
+    background-color: cyan;
+}
+.footer{
+    background-color: black;
+    height: 100px;
+}

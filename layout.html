@@ -20,9 +20,26 @@
     }
     .box{
         flex-grow: 1;
-        margin: 0px 10px;
+        margin: 10px;
         height: 150px;
         background-color: yellow;
+    }
+    
+    @media (max-width: 1000px) {
+        /* .container{
+            width: 100%;
+            flex-direction: column;
+        } */
+
+        .container{
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 45%;
+        }
+        
     }
 </style>
 <body>
@@ -31,6 +48,7 @@
     </div>
 
     <div class="container">
+        <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>

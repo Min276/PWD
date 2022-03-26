@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p{ background: cadetblue;
+            width: 400px; }
+        a{ background: rgb(25, 22, 28);
+            width: 400px;
+            display: block;}
+/* example 1 float */
+        .box0 { width: 800px;
+            height: 200px;
+            background: chocolate}
+        .box1{
+            width: 400px;
+            height: 200px;
+            background: chartreuse;
+            float: left;
+        }
+        .box2{
+            width: 400px;
+            height: 200px;
+            background: cornflowerblue;
+            float: left;
+        }
+        .box3{
+            width: 800px;
+            height: 400px;
+            background: gold;
+            clear: both;
+        }
+/* example 2 float */
+        .box4{
+            padding: 20px;
+            background: yellow;
+            overflow: hidden
+        }
+        .box5{
+            width: 400px;
+            height: 100px;
+            background: black;
+            float: left;
+        }
+        .box6{
+            width: 400px;
+            background: blue;
+            height: 100px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, eligendi.</p>
+    <a href="#"> Link element</a>
+    <br>
+<!--example 1 float-->
+    <div class="box0"></div>
+    <div class="box1"> float; left</div>
+    <div class="box2"> float; left</div>
+    <div class="box3"> clear: both;</div>
+    <br>
+<!-- example 2 float -->
+    <div class="box4">
+        <div class="box5"></div>
+        <div class="box6"></div>
+    </div>
+</body>
+</html>

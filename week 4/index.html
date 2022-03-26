@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        height: 200px;
+        text-align: center;
+        line-height: 200px;
+        font-size: 40px;
+        color: white;
+    }
+    #box1{
+        background: red;
+    }
+    #box2{
+        background: blue;
+        display: none;
+    }
+    #box3{
+        background: green;
+        display: none;
+    }
+</style>
+<body>
+    <h1>Hello World</h1>
+    <button>Button</button>
+
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <button id="pre">Pre</button>
+    <button id="next">Next</button>
+
+</body>
+<script>
+    function doChange() {
+        let p = document.querySelector("h1");
+        p.textContent = "Hello JavaScript";
+        p.style.color = "yellow"
+        p.style.background = "blue";
+        p.style.padding = "15px";
+        p.style.borderRadius = "10px";
+    }
+    document.querySelector("button").onclick = doChange;
+
+    let box = 1;
+    document.querySelector("#pre").onclick = () => {
+        document.querySelector("#box" + box).style.display = "none";
+        box--; if(box < 1) box = 3;
+        document.querySelector("#box" + box).style.display = "block";
+    }
+
+    document.querySelector("#next").onclick = () => {
+        document.querySelector("#box" + box).style.display = "none";
+        box++; if(box > 3) box = 1;
+        document.querySelector("#box" + box).style.display = "block";
+    }
+
+</script>
+</html>

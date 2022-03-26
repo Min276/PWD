@@ -1,0 +1,71 @@
+/* Day 5 example 1
+.wrap{
+    width: 800px;
+    margin: 0 auto;
+}
+header {
+    width: 740px;
+    height: 40px;
+    background: blue;
+    padding: 20px;
+    margin: 10px;
+}
+.main{
+    width: 800px;
+    height: 200px;
+    display: flex;
+}
+.content {
+    width: 100px;
+    background: palevioletred;
+    padding: 20px;
+    margin: 10px;
+}
+.slider {
+    flex-grow: 1;
+    background: yellowgreen;
+    padding: 20px;
+    margin: 10px;
+}
+aside {
+    width: 200px;
+    background: green;
+    padding: 20px;
+    margin: 10px;
+}
+footer {
+    width: 740px;
+    height: 100px;
+    background: black;
+    padding: 20px;
+    margin: 10px;
+} */
+
+/*  Example 2
+@media (max-width: 1000px){
+    /* .container {
+        /* flex-direction: column; */
+        /* flex-wrap: wrap;
+    }  */ 
+    /* .box {
+        width: 45%;
+    }
+}
+.container {
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 1000px;
+    display: flex;
+}
+.hero {
+    flex-grow: 1;
+    height: 200px;
+    background: black;
+    margin: 0 10px;
+}
+.box{
+    margin: 10px;
+    height: 150px;
+    background: grey;
+    flex-grow: 1;
+} */
